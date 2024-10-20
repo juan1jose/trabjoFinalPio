@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/StyleReuso.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+    <nav class="fixed-top navBarInicio">
+        <ul class="nav justify-content-left navbar-fixed-top navInicio">
+            <img src="./img/logo/logoJartdev.png"  clas="" alt="Logo_Jartdev">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reusoPCQ.html">Soporte Tecnico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          
+          </ul>
+        </nav> 
+    
+      </header>
+    <main>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4">
+                
+                <h4>Ingrese le numero de MBPS del que dispone</h4>
+                <div class="input-group mb-3">
+                    <input id="speed" type="number" class="form-control" aria-label="Text input with checkbox">
+                  </div>
+                  <h4>Ingrese la cantidad de clientes de los cuales peinsa conectar con esa velocidad</h4>
+                <div class="input-group mb-3">
+                    <input id="client" type="number" class="form-control" aria-label="Text input with checkbox">
+                  </div>
+                  <h4>La cantidad de megas por clinete son</h4>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Cliente/velocidad</label>
+                    <textarea id="result" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button  onclick="calculate_reuse()" type="button" class="btn btn-primary">Calcular</button>
+                  <script>
+                    function calculate_reuse() {
+    
+                        let speed = document.getElementById('speed').value;
+                        let client = document.getElementById('client').value;
+                        let result = 0;
+    
+
+                        result = speed / client;
+                        document.getElementById('result').value = result;
+
+}
+                  </script>
+              </div>
+            
+              <div class="col-4"></div>
+              
+            </div>
+
+    </main>
+      
+    
+    
+    
+    
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

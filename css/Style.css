@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    position: relative;
+    flex-wrap: wrap;
+    
+}
+
+.navInicio{
+    display: flex;
+    height: 70px;
+    background-color: rgba(200, 241, 252, 0.795);
+    align-items: center;
+    
+}
+.navInicio>li>a:hover{
+    color: aqua;
+    font-size: 20px;
+}
+.carousel{
+    padding: 70px 0 70px 0;
+    border-radius: 20px;
+}
+.carusellflex{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+main{
+    padding: 10px 0 100px 0;
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+.conthistoria{
+    
+    
+    margin: 150px 0 150px 0;
+    padding: 70px 0 70px 0 ;
+    
+    background-color: #b6d6d8;
+    display: flex;
+    
+}

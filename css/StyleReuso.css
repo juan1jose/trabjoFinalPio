@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navInicio{
+    display: flex;
+    height: 70px;
+    background-color: rgba(200, 241, 252, 0.795);
+    align-items: center;
+    
+}
+.navInicio>li>a:hover{
+    color: aqua;
+    font-size: 20px;
+}
+main{
+    
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
